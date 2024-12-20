@@ -1,0 +1,240 @@
+/* to remove default spaces */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080F17;
+    font-family: "Plus Jakarta Sans", serif;
+    color: #D6DDE6;
+    padding: 0px 48px;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0px;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+a {
+    text-decoration: none;
+    color: #D6DDE6;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 42px;
+}
+
+/* home */
+#home {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+#home img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 120px;
+}
+
+/* portfolio */
+#portfolio {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 48px;
+}
+
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+p {
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 62%;
+}
+
+h3 {
+    padding: 96px 0px;
+    text-align: left;
+    width: 54%;
+    font-weight: 500;
+    font-size: 48px;
+}
+
+/* about */
+#contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 0px;
+}
+
+.about-list ul {
+    gap: 120px;
+    width: 100%;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 28px;
+}
+
+h6 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* touch-section */
+#touch {
+    min-height: 100vh;
+    /* flex nhi lete toh align-items and justify-content nhi use kr pate */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.touch-box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+
+.touch-text {
+    text-align: center;
+}
+
+.submit {
+    width: 100%;
+    background-color: #A7EE43;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.skip {
+    background: none;
+    border: none;
+    color: #A7EE43;
+}
+
+.big-box {
+    display: flex;
+    gap: 12px;
+}
+
+.box {
+    width: 56px;
+    height: 64px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    opacity: 4%;
+    border-radius: 8px;
+    color: #ffffff;
+    border: 1.5px solid #ffffff;
+}
+
+/* footer */
+footer {
+    padding-top: 96px;
+    padding-bottom: 32px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .container h2 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+footer .container .btn {
+    border: 1px solid #000000;
+    padding: 14px 32px;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+footer .container .btn h6 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media screen and (max-width:1024px) {
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .navbar {
+        display: none;
+        position: relative;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #portfolio {
+        grid-template-columns: 1fr;
+
+    }
+
+    .project {
+        text-align: center;
+    }
+
+    #about h3 {
+        text-align: center
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 48px 0px;
+    }
+
+    #contact h4 {
+        margin-bottom: 60px;
+    }
+
+    .about-list ul {
+        gap: 40px;
+        width: 100%;
+    }
+
+    h3 {
+        width: 100%;
+    }
+}
