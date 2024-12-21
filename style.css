@@ -170,7 +170,6 @@ footer .container {
 }
 
 footer .container h2 {
-    font-family: "Bebas Neue", sans-serif;
     font-size: 28px;
     font-weight: 400;
 }
@@ -183,7 +182,6 @@ footer .container .btn {
 }
 
 footer .container .btn h6 {
-    font-family: "Roboto Mono", monospace;
     font-size: 20px;
     font-weight: 400;
 }
